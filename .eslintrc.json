@@ -1,0 +1,115 @@
+{
+	"env": {
+		"node": true,
+		"es2021": true,
+		"jest": true
+	},
+	"extends": "eslint:recommended",
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"rules": {
+		"no-fallthrough": "warn",
+		"arrow-parens": "off",
+		"no-console": "off",
+		"no-empty": "off",
+		"default-case-last": "warn",
+		"sort-keys": "off",
+		"sort-vars": "off",
+		"sort-imports": [
+			"warn",
+			{
+				"allowSeparatedGroups": true,
+				"ignoreCase": true,
+				"memberSyntaxSortOrder": [
+					"none",
+					"all",
+					"single",
+					"multiple"
+				]
+			}
+		],
+		"quotes": [
+			"warn",
+			"double",
+			{
+				"avoidEscape": true
+			}
+		],
+		"no-trailing-spaces": "warn",
+		"comma-dangle": [
+			"warn",
+			"never"
+		],
+		"no-mixed-spaces-and-tabs": [
+			"warn",
+			"smart-tabs"
+		],
+		"semi": [
+			"warn",
+			"always"
+		],
+		"indent": [
+			"warn",
+			"tab",
+			{
+				"SwitchCase": 1
+			}
+		],
+		"no-irregular-whitespace": "warn",
+		"no-whitespace-before-property": "warn",
+		"no-multi-spaces": "warn",
+		"func-call-spacing": [
+			"warn",
+			"never"
+		],
+		"no-unused-vars": "off",
+		"no-unused-labels": "warn",
+		"no-unused-expressions": "warn",
+		"no-unreachable": "warn",
+		"prefer-const": "warn",
+		"no-const-assign": "warn",
+		"no-var": "warn",
+		"no-new-object": "warn",
+		"object-shorthand": [
+			"warn",
+			"always"
+		],
+		"quote-props": [
+			"warn",
+			"as-needed"
+		],
+		"no-array-constructor": "warn",
+		"array-callback-return": "warn",
+		"no-eval": "warn",
+		"no-useless-escape": "warn",
+		"default-param-last": [
+			"warn"
+		],
+		"no-new-func": "warn",
+		"prefer-spread": "warn",
+		"prefer-arrow-callback": "warn",
+		"arrow-spacing": "warn",
+		"arrow-body-style": [
+			"warn",
+			"as-needed"
+		],
+		"no-confusing-arrow": "warn",
+		"implicit-arrow-linebreak": [
+			"warn",
+			"beside"
+		],
+		"no-dupe-class-members": "warn",
+		"no-duplicate-imports": "warn",
+		"dot-notation": "warn",
+		"no-unneeded-ternary": "warn",
+		"no-mixed-operators": "warn"
+	},
+	"settings": {
+		"import/resolver": {
+		  "typescript": {}
+		}
+	}
+}
