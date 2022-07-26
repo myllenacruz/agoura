@@ -1,8 +1,11 @@
+import "reflect-metadata";
 import "dotenv/config";
 import consoleStamp from "console-stamp";
 import cors from "cors";
 import http from "http";
 import express from "express";
+import "@shared/container";
+import "@shared/database"
 
 consoleStamp(console, { format: "(->).blue :date(yyyy/mm/dd HH:MM:ss).blue.bgBlack.underline" });
 
