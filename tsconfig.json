@@ -8,8 +8,9 @@
 	  "strictPropertyInitialization": false,
 	  "baseUrl": "./src",
 	  "paths": {
-		"@modules/*": ["modules/*"],
-		"@src/*": ["src/*"]
+		"@src/*": ["src/*"],
+		"@domains/*": ["domains/*"],
+		"@shared/*": ["shared/*"]
 	  },
 	  "allowJs": true,
 	  "resolveJsonModule": true,
