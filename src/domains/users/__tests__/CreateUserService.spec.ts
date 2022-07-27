@@ -29,7 +29,7 @@ describe("Create User", () => {
 		expect(user).toHaveProperty("id");
 	});
 
-	it("shouldnot not create an user with the same email", async () => {
+	it("should not not create an user with the same email", async () => {
 		await createUserService.execute({
 			name: userTest.name,
 			email: userTest.email,
