@@ -29,6 +29,6 @@ describe("Show Profile", () => {
 	});
 
 	it("should not show the profile of an nonexisting user", async () => {
-		expect(showProfileService.execute("")).rejects.toBeInstanceOf(Error)
+		expect(showProfileService.execute("")).rejects.toBeInstanceOf(Error);
 	});
 });
