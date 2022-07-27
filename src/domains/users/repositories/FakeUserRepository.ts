@@ -9,6 +9,7 @@ export class FakeUserRepository implements IUserRepository {
 	public async create(userData: ICreateUserDTO): Promise<User> {
 		const user = Object.assign(new User(), {
 			id: uuidv4(),
+			roles: [],
 			...userData
 		});
 
