@@ -5,7 +5,8 @@
   "author": "Myllena Cruz",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/main/server.ts"
+    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/main/server.ts",
+	"test": "jest"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

@@ -17,15 +17,15 @@ export class UserRepository implements IUserRepository {
 	}
 
 	public async findById(id: string): Promise<User | undefined> {
-		return this.ormRepository.findOne({ where: { id: id } });
+		return this.ormRepository.findOne({ where: id });
 	}
 
-	public async findByEmail(email: string): Promise<User | undefined> {;
-		return this.ormRepository.findOne({ where: { email: email } })
+	public async findByEmail(email: string): Promise<User | undefined> {
+		return this.ormRepository.findOne({ where: email });
 	}
 
 	public async findByName(name: string): Promise<User | undefined> {
-		return this.ormRepository.findOne({ where: { name: name }});
+		return this.ormRepository.findOne({ where: name });
 	}
 
 	public async save(user: User): Promise<User> {
