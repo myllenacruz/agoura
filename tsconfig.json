@@ -10,6 +10,7 @@
 	  "paths": {
 		"@src/*": ["src/*"],
 		"@domains/*": ["domains/*"],
+		"@config/*": ["config/*"],
 		"@shared/*": ["shared/*"]
 	  },
 	  "allowJs": true,
