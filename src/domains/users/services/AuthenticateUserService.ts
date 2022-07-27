@@ -40,6 +40,9 @@ export class AuthenticateUserService {
 		const { secret, expiresIn, refreshExpiresIn } = authConfig.jwt;
 		const roles: string[] = [];
 
+		if (user.admin)
+			roles.push("admin");
+
 		const accessToken = sign({}, secret, {
 			subject: JSON.stringify({
 				id: user.id,
