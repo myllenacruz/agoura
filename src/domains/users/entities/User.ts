@@ -1,5 +1,6 @@
-import { Column, CreateDateColumn, Entity, UpdateDateColumn, PrimaryGeneratedColumn } from "typeorm";
+import { Column, CreateDateColumn, Entity, UpdateDateColumn, PrimaryGeneratedColumn, OneToOne } from "typeorm";
 import { Exclude } from "class-transformer";
+import { Admin } from "./Admin";
 
 @Entity("user")
 export class User {
@@ -20,6 +21,9 @@ export class User {
 	@Exclude()
 	@Column()
 	password: string;
+
+	@OneToOne(() => Admin, admin => admin.user, { eager: true})
+	admin?: Admin;
 
 	@CreateDateColumn({ type: "timestamp without time zone" })
 	created_at: Date;
