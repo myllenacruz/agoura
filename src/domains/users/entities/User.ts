@@ -10,7 +10,7 @@ export class User {
 	@Column()
 	name: string;
 
-	@Column()
+	@Column({ nullable: true })
 	@Exclude()
 	phone: string;
 
